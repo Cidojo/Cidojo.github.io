@@ -1,3 +1,1 @@
-#Cidojo's project
-
-https://Cidojo.github.io
+# Cidojo.github.io
