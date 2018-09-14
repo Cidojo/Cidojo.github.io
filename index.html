@@ -1,14 +1,133 @@
-<!DOCTYPE HTML>
-  <html>
+<!DOCTYPE html>
+  <html lang="ru">
     <head>
-
+      <meta charset="utf-8">
+      <title>CiDojo's portfolio</title>
+      <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <h1>Cidojo's Profile</h1>
+      <h1 class="visually-hidden">Cidojo's Profile</h1>
+      <header class="main-header">
+        <div class="main-header__wrap container">
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Who am I?</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Skills</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Experience</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Education</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Contacts</a></li>
+            <ul>
+          </nav>
+        </div>
       </header>
-      <main>
-        <h2>Cidojo's Body</h2>
+      <main class="main container">
+        <h2 class="main__title visually-hidden">Cidojo's Body</h2>
+        <section class="main__intro intro">
+          <div class="intro__wrap">
+            <img class="intro__photocard" src="" width="240" height= "320" alt="Моя фотография">
+            <div class="intro__name-box">
+              <p class="intro__name">Cid</p>
+              <p class="intro__surname">Dojo</p>
+              <p class="intro__second-name">cidell</p>
+            </div>
+          </div>
+        </section>
+        <section class="main__skills skills">
+          <h2>Skills stack</h2>
+            <ul class="skills__list">
+              <li class="skills__item">HTML5</li>
+              <li class="skills__item">CSS3</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">Sass(Less)</li>
+              <li class="skills__item">Gulp</li>
+              <li class="skills__item">Git</li>
+            <ul>
+        </section>
+        <section class="main__exp experience">
+          <h2 class="experience__title">Experience</h2>
+          <div class="experience__relevant relevant-exp">
+            <h3 class="relevant-exp__title">Соответствующий опыт</h3>
+            <article class="relevant-exp__project project">
+              <h4 class="project__title">intensive JS-1</h4>
+              <img clas="project__img" src="" width="320" height="240" alt="project 1">
+              <p class="project__description"></p>
+            </article>
+          </div>
+          <div class="experience__rest rest-exp">
+            <h3 class="rest-exp__title">Прочий опыт</h3>
+            <ul class="rest-exp__list">
+              <li class="rest-exp__item"></li>
+            </ul>
+          </div>
+        </section>
+        <section class="main__education education">
+          <h2 class="education__title">Образование</h2>
+          <article class="education__institutes">
+            <h3 class="education__title">Высшее образование</h3>
+            <ul class="education__list">
+              <li class="education__item">
+                <table class="education__table">
+                  <tbody>
+                    <tr class="education__raw">
+                      <td class="education__cell">2013</td>
+                      <td>СПбГУЭФ, вечерняя, финанасы и кредит</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="education__item">
+                <table class="education__table">
+                  <tbody>
+                    <tr class="education__raw">
+                      <td class="education__cell">2008</td>
+                      <td>СПбГТИ(ТУ), дневная, автоматизация технологических процессов и производств</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </article>
+          <article class="education__courses">
+            <h3 class="education__title">Курсы</h3>
+            <ul class="education__list">
+              <li class="education__item">
+                <table class="education__table">
+                  <tbody>
+                    <tr class="education__raw">
+                      <td class="education__cell">2018</td>
+                      <td>JavaScript уровень 1, HTML-Academy</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="education__item">
+                <table class="education__table">
+                  <tbody>
+                    <tr class="education__raw">
+                      <td class="education__cell">2018</td>
+                      <td>HTML, CSS уровень 2, HTML-Academy</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="education__item">
+                <table class="education__table">
+                  <tbody>
+                    <tr class="education__raw">
+                      <td class="education__cell">2018</td>
+                      <td>HTML, CSS уровень 1, HTML-Academy</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main__contacts contacts">
+        </section>
       </main>
+      <footer class="main-footer container">
+      </footer>
+    <!-- <script src="js/sticky-head.js"></script> -->
     </body>
-  <html>
+  </html>
