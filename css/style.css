@@ -86,15 +86,48 @@ input[type="radio"].visually-hidden {
 /* intro.scss */
 
 .intro__wrap {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 600px;
 }
 
-.intro__photocard {
-  width: 240px;
-  height: 320px;
+.intro__photocard--front {
+  width: 400px;
+  height: 390px;
+
+  border-radius: 50%;
+}
+
+.intro__photocard--back {
+  z-index: -1;
+
+  position: absolute;
+  left: 200px;
+  top: -50px;
+
+  width: 640px;
+  height: 430px;
 }
 
 /* Skills */
+
+/* relevant-experience */
+.relevant-exp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.relevant-exp__title {
+  width: 100%;
+}
+
+/* Project */
+
+.project__img {
+  width: 200px;
+  height: 200px;
+}
