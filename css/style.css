@@ -127,7 +127,13 @@ input[type="radio"].visually-hidden {
 
 /* Project */
 
-.project__img {
+.project__img-wrap {
   width: 250px;
-  height: 200px;
+  height: 250px;
+  border: 2px solid grey;
+}
+
+.project__img {
+  width: auto;
+  height: auto;
 }
