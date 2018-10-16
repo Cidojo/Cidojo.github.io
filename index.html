@@ -3,6 +3,8 @@
     <head>
       <meta charset="utf-8">
       <title>CiDojo's portfolio</title>
+      <link rel="preload" href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic" as="font">
+      <!-- <link rel="preload" href="fonts/slkscrb.ttf" as="font"> -->
       <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -11,29 +13,33 @@
         <div class="main-header__wrap container">
           <nav class="main-header__nav main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Who am I?</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Skills</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Experience</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Education</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Contacts</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Обо мне</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Навыки</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Опыт</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Образование</a></li>
             <ul>
           </nav>
         </div>
       </header>
-      <main class="main container">
+      <main class="main">
         <h2 class="main__title visually-hidden">Cidojo's Body</h2>
         <section class="main__intro intro">
-          <div class="intro__wrap">
-            <img class="intro__photocard" src="" width="240" height= "320" alt="Моя фотография">
+          <div class="intro__wrap container">
             <div class="intro__name-box">
-              <p class="intro__name">Cid</p>
-              <p class="intro__surname">Dojo</p>
-              <p class="intro__second-name">cidell</p>
+              <p class="intro__name">Максим</p>
+              <p class="intro__second-name">Александрович</p>
+              <p class="intro__surname">Романов</p>
+              <p>email: cidromanov@gmail.com</p>
+              <p>Профиль на Github: <a href="https://github.com/Cidojo">https://github.com/Cidojo</a></p>
+              <p>Профиль на HTMLacademy: <a href="https://htmlacademy.ru/profile/id663077">https://htmlacademy.ru/profile/id663077</a></p>
+              <p><a href="skype:Cidell1?chat">Skype</a></p>
             </div>
+            <img class="intro__photocard intro__photocard--front" src="img/my_photo_front.jpg" width="800" height= "780" alt="Моя фотография">
           </div>
         </section>
         <section class="main__skills skills">
-          <h2>Skills stack</h2>
+          <div class="skills__wrap container">
+            <h2 class="skills__title">Skills stack</h2>
             <ul class="skills__list">
               <li class="skills__item">HTML5</li>
               <li class="skills__item">CSS3</li>
@@ -41,26 +47,108 @@
               <li class="skills__item">Sass(Less)</li>
               <li class="skills__item">Gulp</li>
               <li class="skills__item">Git</li>
+              <li class="skills__item">БЭМ</li>
             <ul>
+          </div>
         </section>
         <section class="main__exp experience">
-          <h2 class="experience__title">Experience</h2>
-          <div class="experience__relevant relevant-exp">
-            <h3 class="relevant-exp__title">Соответствующий опыт</h3>
-            <article class="relevant-exp__project project">
-              <h4 class="project__title">intensive JS-1</h4>
-              <img clas="project__img" src="" width="320" height="240" alt="project 1">
-              <p class="project__description"></p>
-            </article>
-          </div>
-          <div class="experience__rest rest-exp">
-            <h3 class="rest-exp__title">Прочий опыт</h3>
-            <ul class="rest-exp__list">
-              <li class="rest-exp__item"></li>
-            </ul>
+          <h2 class="experience__title container">Мой опыт</h2>
+          <div class="experience__wrap">
+            <div class="experience__relevant relevant-exp container">
+              <h3 class="relevant-exp__title">Опыт в web-разработке</h3>
+              <article class="relevant-exp__project project">
+                <h4 class="project__title">Магазин сладостей (учебный)</h4>
+                <div class="project__img-wrap">
+                  <img class="project__img" src="img/projects_candyshop.jpg" width="600" height="474" alt="Магазин сладостей Кэндишоп">
+                </div>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop">Git respository</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html">Сборка</a></p>
+                <div class="project__description">
+                  <p>Описание:</p>
+                  <p>
+                    Проект выполнен в рамках интенсива <a href="https://htmlacademy.ru/intensive/javascript1">Профессиональный JavaScript 1</a>
+                  </p>
+                  <p>Особенности:</p>
+                  <p>JavaScript, Git(console)</p>
+                </div>
+              </article>
+              <article class="relevant-exp__project project">
+                <h4 class="project__title">Магазин Мишка (учебный)</h4>
+                <div class="project__img-wrap">
+                  <img class="project__img" src="img/projects_mishka.jpg" width="1288" height="677" alt="Магазин мишка">
+                </div>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-mishka">Git respository</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-mishka/index.html">Сборка</a></p>
+                <div class="project__description">
+                  <p>Описание:</p>
+                  <p>
+                    Проект выполнен в рамках интенсива <a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS 2</a>
+                  </p>
+                  <p>Особенности:</p>
+                  <p>адаптивная верстка, БЭМ, адаптивная графика, автоматизация (sass, gulp, nodeJS), Git(console)</p>
+                </div>
+              </article>
+              <article class="relevant-exp__project project">
+                <h4 class="project__title">Наливные полы Спецпласт</h4>
+                <div class="project__img-wrap">
+                  <img class="project__img" src="img/projects_shm.jpg" width="1292" height="966" alt="Наливные полы Спецпласт">
+                </div>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/shm-trade">Git respository</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="http://shm-trade.ru">Сборка</a></p>
+                <div class="project__description">
+                  <p>Описание:</p>
+                  <p>
+                    Личный проект
+                  </p>
+                  <p>Особенности:</p>
+                  <p>верстка и запуск сайта с нуля, настройка PHP отправки формы на email</p>
+                </div>
+              </article>
+              <article class="relevant-exp__project project">
+                <h4 class="project__title">Тесты по промышленной безопасности</h4>
+                <div class="project__img-wrap">
+                  <img class="project__img" src="img/projects_indastrial-safety.jpg" width="1508" height="952" alt="Тесты по промышленной безопасности">
+                </div>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/ScrappingIS">Git respository</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/ScrappingIS/menu.html">Сборка</a></p>
+                <div class="project__description">
+                  <p>Описание:</p>
+                  <p>
+                    Личный проект
+                  </p>
+                  <p>Особенности:</p>
+                  <p>первое практическое применение javaScript, парсинг страниц открытого ресурса для формирования базы вопросов</p>
+                </div>
+              </article>
+              <article class="relevant-exp__project project">
+                <h4 class="project__title">магазин Девайс (учебный)</h4>
+                <div class="project__img-wrap">
+                  <img class="project__img" src="img/projects_device.jpg" width="636" height="360" alt="Магазин Девайс">
+                </div>
+                <p><a target="_blank" rel="noopener noreferrer" href="https:/github.com/Cidojo/663077-device">Git respository</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https:/cidojo.github.io/663077-device/index.html">Сборка</a></p>
+                <div class="project__description">
+                  <p>Описание:</p>
+                  <p>
+                    Проект выполнен в рамках интенсива <a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS 1</a>
+                  </p>
+                  <p>Особенности:</p>
+                  <p>Семантическая верстка, доступность, Git</p>
+                </div>
+              </article>
+            </div>
+            <div class="experience__rest rest-exp container">
+              <h3 class="rest-exp__title">Прочий опыт</h3>
+              <ul class="rest-exp__list">
+                <li class="rest-exp__item">С июня 2018 работаю в качестве ведущего инженера проектно-технологического отдела в АО "НИК"</li>
+                <li class="rest-exp__item">2014 - 2018 инженер-технолог (проектировщик) в АО "ЭлТех СПб"</li>
+                <li class="rest-exp__item">2013 - 2014 инженер-конструктор в ООО "ЛТХ-Баас"</li>
+                <li class="rest-exp__item">2008 - 2013 инженер-конструктор в АО "НПО"Прибор"</li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section class="main__education education">
+        <section class="main__education education container">
           <h2 class="education__title">Образование</h2>
           <article class="education__institutes">
             <h3 class="education__title">Высшее образование</h3>
