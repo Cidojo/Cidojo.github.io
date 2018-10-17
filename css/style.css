@@ -63,14 +63,20 @@ input[type="radio"].visually-hidden {
 .main-header {
   height: 100px;
   margin: 0 auto;
+  padding: 0;
 }
 
-/* .main-header--stick {
+.main-header__wrap {
+  padding: 0;
+}
+
+.main-header__wrap--stick {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-} */
+}
 
 /* main-nav.scss */
 
@@ -158,6 +164,10 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.intro__email a {
+  color: #ffffff;
+}
+
 /* social.scss */
 
 .social {
@@ -221,6 +231,18 @@ input[type="radio"].visually-hidden {
   padding: 0 50px;
 
   list-style: none;
+}
+
+.skills__item {
+  width: 100px;
+  padding: 10px;
+
+  font-weight: bold;
+
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
 /* experience.scss */
@@ -296,4 +318,45 @@ input[type="radio"].visually-hidden {
 .project__img {
   width: auto;
   height: auto;
+}
+
+/* certificates.scss */
+
+.certificates__list {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 80px 10px 30px;
+}
+
+.certificates__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificates__img {
+  width: 307px;
+  height: 432px;
+}
+
+.certificates__item a {
+  margin-top: 20px;
+
+  color: #ffffff;
+}
+
+.certificates__item a:hover {
+  color: #302683;
+}
+
+/* education.scss */
+
+.education__academy-ref {
+  color: #ffffff;
+}
+
+.education__academy-ref:hover {
+  color: #302683;
 }
