@@ -15,6 +15,7 @@
 }
 
 body {
+  min-width: 1150px;
   margin: 0 auto;
 
   font-family: "Comfortaa", Terminal, sans-serif;
@@ -53,10 +54,12 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1150px;
   margin: 0 auto;
-  padding: 0;
+  padding: 30px 20px;
+  box-sizing: border-box;
 }
 
 /* main-header.scss */
+
 .main-header {
   height: 100px;
   margin: 0 auto;
@@ -70,6 +73,7 @@ input[type="radio"].visually-hidden {
 } */
 
 /* main-nav.scss */
+
 .main-nav {
   display: flex;
   justify-content: flex-end;
@@ -101,9 +105,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* intro.scss */
-.intro {
-  padding: 30px;
-}
 
 .intro__wrap {
   position: relative;
@@ -112,28 +113,100 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.intro__photocard--front {
+.intro__word {
+  align-self: center;
+
+  width: 600px;
+
+  font-size: 27px;
+}
+
+.intro__word-author {
+  font-size: 17px;
+}
+
+.intro__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.intro__name {
+  font-size: 45px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.intro__photocard {
   width: 300px;
   height: 285px;
 
   border-radius: 50%;
 }
 
-.intro__photocard--back {
-  z-index: -1;
+.intro__age {
+  width: 100%;
 
-  position: absolute;
-  left: 200px;
-  top: -50px;
-
-  width: 640px;
-  height: 430px;
+  text-align: center;
 }
 
-/* Skills */
-.skills {
-  padding: 30px 20px;
+.intro__email {
+  width: 100%;
+  text-align: center;
 }
+
+/* social.scss */
+
+.social {
+  display: flex;
+  justify-content: space-around;
+
+  width: 150px;
+  padding: 5px;
+
+  list-style: none;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.social a {
+  display: block;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social__git a {
+  width: 32px;
+  height: 32px;
+}
+
+.social__git a:hover svg {
+  fill: #76bd77;
+}
+
+.social__academy a {
+  width: 27px;
+  height: 34px;
+}
+
+.social__academy a:hover svg {
+  fill: #302683;
+}
+
+.social__skype a {
+  width: 32px;
+  height: 32px;
+}
+
+.social__skype a:hover svg {
+  fill: #0078ca;
+}
+
+/* skills.scss */
 
 .skills__title {
   margin: 0;
@@ -150,15 +223,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-/* experience */
-.experience {
-  /* color: #ffffff; */
-  /* background-color: #000000; */
-}
+/* experience.scss */
 
 .experience__title {
-  /* margin: 0; */
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 .experience__wrap {
@@ -166,14 +234,13 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-/* relevent-exp */
+/* relevent-exp.scss */
 
 .relevant-exp {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -181,10 +248,10 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-/* rest-exp */
+/* rest-exp.scss */
+
 .rest-exp {
   margin-top: 50px;
-  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -201,7 +268,9 @@ input[type="radio"].visually-hidden {
 .rest-exp__item {
   padding: 10px 5px;
 }
-/* Project */
+
+/* project.scss */
+
 .project {
   display: flex;
   flex-direction: column;
