@@ -19,6 +19,8 @@ body {
   margin: 0 auto;
 
   font-family: "Comfortaa", Terminal, sans-serif;
+  font-size: 17px;
+  line-height: 23px;
 
   color: #ffffff;
   background-color: #000000;
@@ -318,7 +320,7 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   padding: 10px;
 
-  box-shadow: 0 0 1px 0 #000000;
+  box-shadow: 0 0 3px 0px #000000;
   background-color: #ffffff;
 }
 
@@ -333,6 +335,20 @@ input[type="radio"].visually-hidden {
 .project__img {
   width: auto;
   height: auto;
+}
+
+.project__link {
+  display: inline-block;
+}
+
+.project__link--git {
+  float: left;
+  margin-left: 50px;
+}
+
+.project__link--build {
+  float: right;
+  margin-right: 50px;
 }
 
 /* certificates.scss */
@@ -367,6 +383,23 @@ input[type="radio"].visually-hidden {
 }
 
 /* education.scss */
+
+.education__table {
+  border-collapse: collapse;
+}
+
+.education__list {
+  margin: 30px 0;
+
+  list-style: none;
+}
+
+.education__cell {
+  width: 125px;
+  padding-right: 40px;
+
+  text-align: right;
+}
 
 .education__academy-ref {
   color: #ffffff;
