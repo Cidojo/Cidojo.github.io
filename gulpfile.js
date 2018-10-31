@@ -23,16 +23,16 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("./css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("./css"))
     // .pipe(server.stream());
 });
 
 // gulp.task("serve", function() {
 //   server.init({
-//     server: "docs/",
+//     server: "build/",
 //     notify: false,
 //     open: true,
 //     cors: true,
@@ -53,11 +53,11 @@ gulp.task("copy", function () {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest('docs'));
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task("clean", function () {
-    return del("docs");
+    return del("build");
   });
 
 gulp.task("sprite", function () {
@@ -66,7 +66,7 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("docs/img"));
+    .pipe(gulp.dest("./img"));
 });
 
 gulp.task("html", function () {
@@ -74,9 +74,9 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("docs"));
+    .pipe(gulp.dest("./"));
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("copy", "style", "sprite", "html", done);
 });
