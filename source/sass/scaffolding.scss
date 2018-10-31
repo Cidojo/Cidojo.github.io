@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+}
+
+body {
+  min-width: 1150px;
+  margin: 0 auto;
+
+  font-family: "Comfortaa", "Terminal", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+
+  color: #ffffff;
+  background-color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

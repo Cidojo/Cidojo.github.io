@@ -1,0 +1,47 @@
+.social {
+  display: flex;
+  justify-content: space-around;
+
+  width: 150px;
+  padding: 5px;
+
+  list-style: none;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.social a {
+  position: relative;
+
+  display: block;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social__git a {
+  width: 32px;
+  height: 32px;
+}
+
+.social__git a:hover svg {
+  fill: #76bd77;
+}
+
+.social__academy a {
+  width: 27px;
+  height: 34px;
+}
+
+.social__academy a:hover svg {
+  fill: #302683;
+}
+
+.social__skype a {
+  width: 32px;
+  height: 32px;
+}
+
+.social__skype a:hover svg {
+  fill: #0078ca;
+}

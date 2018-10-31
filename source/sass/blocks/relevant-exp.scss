@@ -1,0 +1,11 @@
+.relevant-exp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+}
+
+.relevant-exp__title {
+  width: 100%;
+}

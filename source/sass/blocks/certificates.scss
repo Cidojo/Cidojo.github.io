@@ -1,0 +1,28 @@
+.certificates__list {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 80px 10px 30px;
+}
+
+.certificates__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificates__img {
+  width: 307px;
+  height: 432px;
+}
+
+.certificates__item a {
+  margin-top: 20px;
+
+  color: #ffffff;
+}
+
+.certificates__item a:hover {
+  color: #302683;
+}

@@ -1,0 +1,40 @@
+.project {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
+  min-height: 480px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+
+  box-shadow: 0 0 3px 0 #000000;
+  background-color: #ffffff;
+}
+
+.project__title {
+  min-height: 30px;
+}
+
+.project__img-wrap {
+  min-height: 250px;
+}
+
+.project__img {
+  width: auto;
+  height: auto;
+}
+
+.project__link {
+  display: inline-block;
+}
+
+.project__link--git {
+  float: left;
+  margin-left: 50px;
+}
+
+.project__link--build {
+  float: right;
+  margin-right: 50px;
+}

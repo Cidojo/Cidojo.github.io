@@ -1,0 +1,36 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.main-nav__list {
+  display: flex;
+
+  width: 600px;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(1, 171, 123, 1);
+  list-style: none;
+}
+
+.main-nav__item {
+  width: 150px;
+}
+
+.main-nav__item:hover {
+  color: #01ab7b;
+  background-color: #ffffff;
+  box-shadow: 0 2px 0 0 rgba(1, 171, 123, 1);
+}
+
+.main-nav__link {
+  display: block;
+
+  padding: 20px 10px;
+
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}

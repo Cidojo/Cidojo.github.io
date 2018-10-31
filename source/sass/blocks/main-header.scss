@@ -1,0 +1,25 @@
+.main-header {
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header__wrap {
+  padding: 0;
+}
+
+.main-header__wrap--stick {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0.3;
+}
+
+.main-header__wrap:hover {
+  padding: 0;
+
+  opacity: 1;
+}
