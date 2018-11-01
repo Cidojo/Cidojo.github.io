@@ -16,7 +16,7 @@ var run = require("run-sequence");
 var del = require("del");
 var rename = require("gulp-rename");
 
-gulp.task("style", function() {
+gulp.task("style", function(done) {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -28,6 +28,7 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("./css"))
     // .pipe(server.stream());
+    done();
 });
 
 // gulp.task("serve", function() {
@@ -77,6 +78,8 @@ gulp.task("html", function () {
     .pipe(gulp.dest("./"));
 });
 
-gulp.task("build", function(done) {
-  run("copy", "style", "sprite", "html", done);
-});
+// gulp.task("build", function(done) {
+//   run("copy", "style", "sprite", "html", done);
+// });
+
+gulp.task("build", gulp.series("copy", "style", "sprite", "html"));
