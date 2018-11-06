@@ -19,29 +19,29 @@
   background-size: contain;
 }
 
-.social__git a {
-  width: 32px;
-  height: 32px;
-}
+// .social__git a {
+//   width: 32px;
+//   height: 32px;
+// }
 
-.social__git a:hover svg {
+.social__icon--git:hover {
   fill: #76bd77;
 }
 
-.social__academy a {
-  width: 27px;
-  height: 34px;
-}
+// .social__htmlacademy a {
+//   width: 27px;
+//   height: 34px;
+// }
 
-.social__academy a:hover svg {
+.social__icon--htmlacademy:hover {
   fill: #302683;
 }
 
-.social__skype a {
-  width: 32px;
-  height: 32px;
-}
+// .social__skype a {
+//   width: 32px;
+//   height: 32px;
+// }
 
-.social__skype a:hover svg {
+.social__icon--skype:hover {
   fill: #0078ca;
 }

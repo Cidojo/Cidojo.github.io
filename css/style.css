@@ -532,7 +532,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff; }
 
 .project__title {
-  min-height: 30px; }
+  min-height: 45px; }
 
 .project__img-wrap {
   min-height: 250px; }
@@ -541,16 +541,29 @@ input[type="radio"].visually-hidden {
   width: auto;
   height: auto; }
 
+.project__links {
+  width: 120px;
+  line-height: 0;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 30px; }
+
 .project__link {
-  display: inline-block; }
+  float: left;
+  display: inline-block;
+  margin: 10px; }
 
 .project__link--git {
-  float: left;
-  margin-left: 50px; }
+  float: left; }
 
 .project__link--build {
-  float: right;
-  margin-right: 50px; }
+  float: right; }
+
+.project__icon {
+  fill: #ffffff; }
+
+.project__icon:hover {
+  fill: #76bd77; }
 
 .relevant-exp {
   display: -webkit-box;
@@ -626,23 +639,11 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-size: contain; }
 
-.social__git a {
-  width: 32px;
-  height: 32px; }
-
-.social__git a:hover svg {
+.social__icon--git:hover {
   fill: #76bd77; }
 
-.social__academy a {
-  width: 27px;
-  height: 34px; }
-
-.social__academy a:hover svg {
+.social__icon--htmlacademy:hover {
   fill: #302683; }
 
-.social__skype a {
-  width: 32px;
-  height: 32px; }
-
-.social__skype a:hover svg {
+.social__icon--skype:hover {
   fill: #0078ca; }

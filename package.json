@@ -12,12 +12,15 @@
     "eslint-config-htmlacademy": "^0.5.2",
     "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.2",
+    "gulp-minify": "^3.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^6.1.1",
+    "imagemin": "^6.0.0",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1",
     "stylelint": "^9.7.1",
@@ -28,6 +31,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
+    "clean": "gulp clean",
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
@@ -45,9 +49,5 @@
   ],
   "engines": {
     "node": "10.13.0"
-  },
-  "dependencies": {
-    "minimatch": "^3.0.2",
-    "vinyl-fs": "^3.0.3"
   }
 }
