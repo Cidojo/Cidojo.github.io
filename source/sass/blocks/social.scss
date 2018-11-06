@@ -19,29 +19,26 @@
   background-size: contain;
 }
 
-// .social__git a {
-//   width: 32px;
-//   height: 32px;
-// }
-
-.social__icon--git:hover {
-  fill: #76bd77;
+.social__list {
+  line-height: 0;
 }
 
-// .social__htmlacademy a {
-//   width: 27px;
-//   height: 34px;
-// }
-
-.social__icon--htmlacademy:hover {
-  fill: #302683;
+.social__description {
+  line-height: 23px;
 }
 
-// .social__skype a {
-//   width: 32px;
-//   height: 32px;
-// }
-
-.social__icon--skype:hover {
-  fill: #0078ca;
+.social__icon:hover {
+  fill: #ab1701;
 }
+
+// .social__icon--git:hover {
+//   fill: #76bd77;
+// }
+//
+// .social__icon--htmlacademy:hover {
+//   fill: #302683;
+// }
+//
+// .social__icon--skype:hover {
+//   fill: #0078ca;
+// }

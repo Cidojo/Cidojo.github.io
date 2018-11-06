@@ -11,9 +11,25 @@ var minify = require("gulp-csso");
 var jsminify = require("gulp-minify");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
+var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 var rename = require("gulp-rename");
+
+gulp.task("serve", function() {
+  server.init({
+    server: "./",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"));
+  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/js/*.js", gulp.series("compress"));
+  gulp.watch("./*.html").on("change", server.reload);
+});
 
 gulp.task("style", function(done) {
   return gulp.src("source/sass/style.scss")

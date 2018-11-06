@@ -41,7 +41,7 @@
               <p class="intro__mobile">моб. +7 968 187 04 43</p>
               <p class="intro__email"><a href="mailto:cidromanov@gmail.com">cidromanov@gmail.com</a></p>
               <ul class="intro__social social">
-                <li class="social__git">
+                <li class="social__list social__list--git">
                   <a href="https://github.com/Cidojo" target="_blank" rel="noopener noreferrer" title="Мой профиль на Github">
                     <svg class="social__icon social__icon--git" width="32" height="32">
                       <use xlink:href="#icon-git"></use>
@@ -49,7 +49,7 @@
                     <span class="social__description visually-hidden">Мой профиль на Github</span>
                   </a>
                 </li>
-                <li class="social__htmlacademy">
+                <li class="social__list social__list--htmlacademy">
                   <a href="https://htmlacademy.ru/profile/id663077" target="_blank" rel="noopener noreferrer" title="Мой профиль на HTMLAcademy">
                     <svg class="social__icon social__icon--htmlacademy" width="27" height="34">
                       <use xlink:href="#icon-htmlacademy"></use>
@@ -57,7 +57,7 @@
                     <span class="social__description visually-hidden">Мой профиль на HTMLAcademy</span>
                   </a>
                 </li>
-                <li class="social__skype">
+                <li class="social__list social__list--skype">
                   <a href="skype:Cidell1?chat" title="Мое имя в Skype - Cidell1 (открыть чат)">
                     <svg class="social__icon social__icon--skype" width="32" height="32">
                       <use xlink:href="#icon-skype"></use>
@@ -90,65 +90,75 @@
             <div class="experience__relevant relevant-exp container">
               <h3 class="relevant-exp__title">Опыт в web-разработке</h3>
               <article class="relevant-exp__project project">
-                <h4 class="project__title">Магазин сладостей (учебный)</h4>
+                <h4 class="project__title">Магазин сладостей</h4>
                 <div class="project__img-wrap">
                   <img class="project__img" src="img/projects_candyshop.jpg" width="600" height="474" alt="Магазин сладостей Кэндишоп">
                 </div>
-                <div class="project__links">
+                <div class="project__short">
                   <p class="project__link project__link--git">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop" alt="GitHub" title="GitHub">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop" aria-label="GitHub" title="GitHub">
                       <svg class="project__icon project__icon--git" width="32" height="32">
                         <use xlink:href="#icon-git"></use>
                       </svg>
                     </a>
                   </p>
                   <p class="project__link project__link--build">
-                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html" alt="Сборка" title="Сборка">
+                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html" aria-label="Сборка" title="Сборка">
                       <svg class="project__icon project__icon--globe" width="32" height="32">
                         <use xlink:href="#icon-globe"></use>
                       </svg>
                     </a>
                   </p>
+                  <p class="project__type project__type--study">
+                    Учебный
+                  </p>
                 </div>
                 <div class="project__description">
-                  <p><b>Описание:</b></p>
+                  <p><b>Магазин</b></p>
                   <p>
-                    Личный учебный проект, выполнен на интенсиве <a href="https://htmlacademy.ru/intensive/javascript1">профессиональный JavaScript 1</a>.
-                    Загрузка данных с сервера и отрисовка товаров
+                    Проект выполнен на интенсиве &laquo;<a href="https://htmlacademy.ru/intensive/javascript1">Профессиональный JavaScript 1</a>&raquo;
                   </p>
-                  <p><b>Особенности:</b></p>
-                  <p>JavaScript, Git(console)</p>
+                  <p>Загрузка данных с сервера и отрисовка товаров(генерация DOM)</p>
+                  <p>Оживление интерфейса</p>
+                  <p>Фильтр товаров, сортировка и добавление в корзину</p>
+                  <p><b>Стек:</b></p>
+                  <p>JavaScript(ES5), AJAX, модуляция</p>
                 </div>
               </article>
               <article class="relevant-exp__project project">
-                <h4 class="project__title">Магазин Мишка (учебный)</h4>
+                <h4 class="project__title">Магазин Мишка</h4>
                 <div class="project__img-wrap">
                   <img class="project__img" src="img/projects_mishka.jpg" width="1288" height="677" alt="Магазин мишка">
                 </div>
-                <div class="project__links">
+                <div class="project__short">
                   <p class="project__link project__link--git">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop" alt="GitHub" title="GitHub">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-mishka" aria-label="GitHub" title="GitHub">
                       <svg class="project__icon project__icon--git" width="32" height="32">
                         <use xlink:href="#icon-git"></use>
                       </svg>
                     </a>
                   </p>
                   <p class="project__link project__link--build">
-                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html" alt="Сборка" title="Сборка">
+                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-mishka/index.html" aria-label="Сборка" title="Сборка">
                       <svg class="project__icon project__icon--globe" width="32" height="32">
                         <use xlink:href="#icon-globe"></use>
                       </svg>
                     </a>
                   </p>
+                  <p class="project__type project__type--study">
+                    Учебный
+                  </p>
                 </div>
                 <div class="project__description">
-                  <p><b>Описание:</b></p>
+                  <p><b>Магазин</b></p>
                   <p>
-                    Личный учебный проект, выполнен на интенсиве <a href="https://htmlacademy.ru/intensive/adaptive">профессиональный HTML и CSS 2</a>.
-                    Верстка 3-х страниц - главная, каталог и форма заказа.
+                    Проект выполнен на интенсиве &laquo;<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS 2</a>&raquo;
                   </p>
-                  <p><b>Особенности:</b></p>
-                  <p>адаптивная и кроссбраузерная верстка, БЭМ, адаптивная графика, автоматизация (sass, gulp, nodeJS), Git(console)</p>
+                  <p>Адаптивная верстка (мобильный, планшет и десктоп экраны)</p>
+                  <p>Использование препроцессора</p>
+                  <p>Автоматизация сборки</p>
+                  <p><b>Стек:</b></p>
+                  <p>Адаптивная кроссбраузерная верстка, БЭМ, адаптивная графика, автоматизация (SASS, GULP, NODE)</p>
                 </div>
               </article>
               <article class="relevant-exp__project project">
@@ -156,29 +166,31 @@
                 <div class="project__img-wrap">
                   <img class="project__img" src="img/projects_shm.jpg" width="1292" height="966" alt="Наливные полы Спецпласт">
                 </div>
-                <div class="project__links">
+                <div class="project__short">
                   <p class="project__link project__link--git">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop" alt="GitHub" title="GitHub">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/shm-trade" aria-label="GitHub" title="GitHub">
                       <svg class="project__icon project__icon--git" width="32" height="32">
                         <use xlink:href="#icon-git"></use>
                       </svg>
                     </a>
                   </p>
                   <p class="project__link project__link--build">
-                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html" alt="Сборка" title="Сборка">
+                    <a target="_blank" rel="noopener noreferrer" href="http://shm-trade.ru" aria-label="Сборка" title="Сборка">
                       <svg class="project__icon project__icon--globe" width="32" height="32">
                         <use xlink:href="#icon-globe"></use>
                       </svg>
                     </a>
                   </p>
+                  <p class="project__type">
+                    Личный
+                  </p>
                 </div>
                 <div class="project__description">
-                  <p><b>Описание:</b></p>
-                  <p>
-                    Личный проект
-                  </p>
-                  <p><b>Особенности:</b></p>
-                  <p>верстка и запуск сайта с "нуля", настройка PHP отправки формы на email</p>
+                  <p><b>Информационно-торговый ресурс</b></p>
+                  <p>Верстка и запуск сайта с "нуля"</p>
+                  <p>Настройка PHP отправки формы на email</p>
+                  <p><b>Стек:</b></p>
+                  <p>PHP, HTML, JavaScript</p>
                 </div>
               </article>
               <article class="relevant-exp__project project">
@@ -186,59 +198,65 @@
                 <div class="project__img-wrap">
                   <img class="project__img" src="img/projects_industrial-safety.jpg" width="1508" height="952" alt="Тесты по промышленной безопасности">
                 </div>
-                <div class="project__links">
+                <div class="project__short">
                   <p class="project__link project__link--git">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop" alt="GitHub" title="GitHub">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/scrappingis" aria-label="GitHub" title="GitHub">
                       <svg class="project__icon project__icon--git" width="32" height="32">
                         <use xlink:href="#icon-git"></use>
                       </svg>
                     </a>
                   </p>
                   <p class="project__link project__link--build">
-                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html" alt="Сборка" title="Сборка">
+                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/ScrappingIS/" aria-label="Сборка" title="Сборка">
                       <svg class="project__icon project__icon--globe" width="32" height="32">
                         <use xlink:href="#icon-globe"></use>
                       </svg>
                     </a>
                   </p>
+                  <p class="project__type">
+                    Личный
+                  </p>
                 </div>
                 <div class="project__description">
-                  <p><b>Описание:</b></p>
-                  <p>
-                    Личный проект
-                  </p>
-                  <p><b>Особенности:</b></p>
-                  <p>первый опыт с JavaScript, парсинг страниц открытого ресурса с помощью сниппета для формирования базы вопросов</p>
+                  <p><b>Тестирование</b></p>
+                  <p>Программа-тестирование на базе HTML/JS для подготовки отдела к сдаче экзаменов</p>
+                  <p>Первый опыт с JavaScript</p>
+                  <p>Парсинг страниц открытого ресурса с помощью сниппета для формирования базы вопросов</p>
+                  <p><b>Стек:</b></p>
+                  <p>HTML, JavaScript, NODE, адаптив под мобильный экран</p>
                 </div>
               </article>
               <article class="relevant-exp__project project">
-                <h4 class="project__title">Магазин Девайс (учебный)</h4>
+                <h4 class="project__title">Магазин Девайс</h4>
                 <div class="project__img-wrap">
                   <img class="project__img" src="img/projects_device.jpg" width="636" height="360" alt="Магазин Девайс">
                 </div>
-                <div class="project__links">
+                <div class="project__short">
                   <p class="project__link project__link--git">
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-candyshop" alt="GitHub" title="GitHub">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cidojo/663077-device" aria-label="GitHub" title="GitHub">
                       <svg class="project__icon project__icon--git" width="32" height="32">
                         <use xlink:href="#icon-git"></use>
                       </svg>
                     </a>
                   </p>
                   <p class="project__link project__link--build">
-                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-candyshop/index.html" alt="Сборка" title="Сборка">
+                    <a target="_blank" rel="noopener noreferrer" href="https://cidojo.github.io/663077-device/index.html" aria-label="Сборка" title="Сборка">
                       <svg class="project__icon project__icon--globe" width="32" height="32">
                         <use xlink:href="#icon-globe"></use>
                       </svg>
                     </a>
                   </p>
+                  <p class="project__type project__type--study">
+                    Учебный
+                  </p>
                 </div>
                 <div class="project__description">
-                  <p><b>Описание:</b></p>
+                  <p><b>Магазин</b></p>
                   <p>
-                    Личный учебный проект, выполнен на интенсиве <a href="https://htmlacademy.ru/intensive/htmlcss">профессиональный HTML и CSS 1</a>.
-                    Верстка двух страниц - главная и страница каталога(моноподы для селфи).
+                    Проект выполнен на интенсиве &laquo;<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS 1</a>&raquo;
                   </p>
-                  <p><b>Особенности:</b></p>
+                  <p>Верстка двух страниц - главная и страница каталога(моноподы для селфи)</p>
+                  <p><b>Стек:</b></p>
                   <p>Семантическая и кроссбраузерная верстка, доступность, Git</p>
                 </div>
               </article>
