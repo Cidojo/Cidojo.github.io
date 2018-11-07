@@ -561,10 +561,6 @@ input[type="radio"].visually-hidden {
           align-items: center;
   min-height: 250px; }
 
-.project__img {
-  width: auto;
-  height: auto; }
-
 .project__short {
   margin: 20px 0;
   line-height: 0;
