@@ -3,7 +3,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 
-  margin: 80px 10px 30px;
+  margin: 0 10px 30px;
 }
 
 .certificates__item {
@@ -11,6 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-top: 20px;
 }
 
 .certificates__img {

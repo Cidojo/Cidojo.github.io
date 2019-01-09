@@ -349,7 +349,7 @@ input[type="radio"].visually-hidden {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 80px 10px 30px; }
+  margin: 0 10px 30px; }
 
 .certificates__item {
   display: -webkit-box;
@@ -364,7 +364,8 @@ input[type="radio"].visually-hidden {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: 20px; }
 
 .certificates__img {
   width: 307px;
