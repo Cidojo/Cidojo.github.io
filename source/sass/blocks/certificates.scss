@@ -1,6 +1,7 @@
 .certificates__list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   margin: 80px 10px 30px;
 }

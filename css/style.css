@@ -347,6 +347,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 80px 10px 30px; }
 
 .certificates__item {
