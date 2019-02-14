@@ -534,10 +534,6 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 0 3px 0 #000000;
   background-color: #ffffff; }
 
-.project:last-of-type {
-  margin-left: 45px;
-  margin-right: auto; }
-
 .project__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,12 +652,13 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 0 50px;
   list-style: none; }
 
 .skills__item {
   width: 100px;
+  margin-top: 20px;
   padding: 10px;
   font-weight: bold;
   text-align: center;
