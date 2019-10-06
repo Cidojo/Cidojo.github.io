@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  width: 300px;
+  width: 334px;
   min-height: 480px;
   margin-top: 20px;
   margin-right: 20px;
@@ -30,7 +30,7 @@
 .project__img-wrap {
   display: flex;
   align-items: center;
-  min-height: 250px;
+  min-height: 280px;
 }
 
 .project__short {
@@ -62,25 +62,33 @@
   line-height: 32px;
 }
 
-.project__type::before {
-  content: "";
+.project__type {
+  &::before {
+    content: "";
 
-  position: absolute;
-  top: 8px;
-  left: -23px;
+    position: absolute;
+    top: 8px;
+    left: -23px;
 
-  display: block;
-  width: 12px;
-  height: 12px;
+    display: block;
+    width: 12px;
+    height: 12px;
 
-  background-color: #00ff00;
+    background-color: #00ff00;
 
-  border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  &--study::before {
+    background-color: #ffff00;
+  }
+
+  &--commerce::before {
+    background-color: #ab1701;
+  }
 }
 
-.project__type--study::before {
-  background-color: #ffff00;
-}
+.project__type
 
 .project__link a:focus {
   outline: none;

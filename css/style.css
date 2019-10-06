@@ -345,11 +345,14 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 10px 30px; }
+  margin: 0 0 30px;
+  padding: 0 50px;
+  padding-right: 30px; }
 
 .certificates__item {
   display: -webkit-box;
@@ -365,7 +368,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px; }
+  width: calc(33.3333% - 40px);
+  margin-top: 20px;
+  margin-right: 20px; }
 
 .certificates__img {
   width: 307px;
@@ -525,7 +530,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
+  width: 334px;
   min-height: 480px;
   margin-top: 20px;
   margin-right: 20px;
@@ -558,7 +563,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 250px; }
+  min-height: 280px; }
 
 .project__short {
   margin: 20px 0;
@@ -595,6 +600,10 @@ input[type="radio"].visually-hidden {
 .project__type--study::before {
   background-color: #ffff00; }
 
+.project__type--commerce::before {
+  background-color: #ab1701; }
+
+.project__type
 .project__link a:focus {
   outline: none; }
 
@@ -618,6 +627,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -649,16 +659,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 30px;
   padding: 0 50px;
+  padding-right: 40px;
   list-style: none; }
 
 .skills__item {
   width: 100px;
   margin-top: 20px;
+  margin-right: 10px;
   padding: 10px;
   font-weight: bold;
   text-align: center;
