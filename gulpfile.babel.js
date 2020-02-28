@@ -16,7 +16,7 @@ import browserSync from 'browser-sync';
 const server = browserSync.create();
 const PRODUCTION = yargs.argv.prod;
 const mode = PRODUCTION ? 'production' : 'development';
-const BUILD_PATH = 'docs';
+const BUILD_PATH = 'build';
 
 const paths = {
   styles: {
