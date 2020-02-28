@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Comfortaa";
+  src:
+    url("../fonts/comfortaa-regular.woff") format("woff"),
+    url("../fonts/comfortaa-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src:
+    url("../fonts/comfortaa-bold.woff") format("woff"),
+    url("../fonts/comfortaa-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+
+  font-family: "Comfortaa", "Terminal", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+
+  color: #ffffff;
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

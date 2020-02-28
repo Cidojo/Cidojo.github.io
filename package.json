@@ -4,50 +4,33 @@
   "private": true,
   "description": "Cidojo's Portfolio",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "8.3.x",
-    "browser-sync": "^2.26.3",
-    "del": "^3.0.0",
-    "eslint": "^5.8.0",
-    "eslint-config-htmlacademy": "^0.5.2",
-    "gulp": "^4.0.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^5.0.2",
-    "gulp-minify": "^3.1.0",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "7.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-svgstore": "^6.1.1",
-    "imagemin": "^6.0.0",
-    "posthtml-include": "^1.2.0",
-    "run-sequence": "^2.2.1",
-    "stylelint": "^9.7.1",
-    "stylelint-config-htmlacademy": "^0.1.1"
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.1",
+    "stylelint-scss": "^3.14.2",
+    "webpack": "^4.41.6",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^15.1.0"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "serve": "gulp serve",
-    "clean": "gulp clean",
-    "start": "npm run build && gulp serve"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build --prod",
+    "start": "gulp start"
   },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
-  ],
   "engines": {
     "node": "^10.13.0"
   }

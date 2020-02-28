@@ -1,0 +1,57 @@
+.intro__wrap {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__word {
+  align-self: center;
+
+  width: 600px;
+
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.intro__word-author {
+  font-size: 17px;
+}
+
+.intro__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.intro__name {
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.intro__photocard {
+  width: 300px;
+  height: 285px;
+
+  border-radius: 50%;
+}
+
+.intro__age {
+  width: 100%;
+
+  text-align: center;
+}
+
+.intro__email {
+  width: 100%;
+  text-align: center;
+}
+
+.intro__email a {
+  color: #ffffff;
+}
