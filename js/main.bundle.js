@@ -187,4 +187,3 @@ function stickHead() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.bundle.js.map
